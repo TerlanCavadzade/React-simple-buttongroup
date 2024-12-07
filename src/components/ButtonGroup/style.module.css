@@ -1,0 +1,29 @@
+.optionContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.optionContainer > label > input {
+  display: none;
+}
+
+.optionContainer > label {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid grey;
+  flex: 1;
+  cursor: pointer;
+}
+
+.optionContainer > label:first-of-type {
+  border-top-left-radius: 100vh;
+  border-bottom-left-radius: 100vh;
+}
+
+.optionContainer > label:last-of-type {
+  border-top-right-radius: 100vh;
+  border-bottom-right-radius: 100vh;
+}
+
+.optionContainer > label:has(input:checked) {
+  background-color: grey;
+}
